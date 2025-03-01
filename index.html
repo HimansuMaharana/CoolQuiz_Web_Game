@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COOL QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="landing-page" class="page active">
+            <h1>COOL QUIZ</h1>
+            <h3>Test your knowledge!</h3>
+            <h1>Select category and difficulty.</h1>
+            <button id="start-button">Start</button>
+            <button id="toggle-mode">Change Theme</button>
+        </div>
+
+        <div id="category-selection" class="page">
+            <h1>Select Category</h1>
+            <div class="category-cards">
+                <div class="category-card" data-category="cars">
+                    <h3>Cars</h3>
+                </div>
+                <div class="category-card" data-category="geography">
+                    <h3>Geography</h3>
+                </div>
+                <div class="category-card" data-category="history">
+                    <h3>History</h3>
+                </div>
+                <div class="category-card" data-category="tech">
+                    <h3>Tech</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="difficulty-selection" class="page">
+            <h2>Select Difficulty</h2>
+            <div class="difficulty-cards">
+                <div class="difficulty-card" data-difficulty="easy">
+                    <h3>Easy</h3>
+                </div>
+                <div class="difficulty-card" data-difficulty="medium">
+                    <h3>Medium</h3>
+                </div>
+                <div class="difficulty-card" data-difficulty="hard">
+                    <h3>Hard</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-page" class="page">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="answer-buttons" class="answer-grid">
+                    <button class="answer-button" data-answer="0"></button>
+                    <button class="answer-button" data-answer="1"></button>
+                    <button class="answer-button" data-answer="2"></button>
+                    <button class="answer-button" data-answer="3"></button>
+                </div>
+            </div>
+            <div id="timer">30</div>
+        </div>
+
+        <div id="completion-page" class="page">
+            <h2>Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
